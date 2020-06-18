@@ -1,75 +1,126 @@
+$primary: #d03958
+$second: #161616
+$third: #ffffff
+
 .header
     background: url('../img/header/bg.png') no-repeat center       
     position: relative
     +general
-    //color: $third
-.navbar
-    display: block
-    &-wrap
-        padding-top: 38px
-        padding-bottom: 160px
+    height: 693px    
+.navbar            
     display: flex
     justify-content: space-between
-    align-items: center    
-    &__logo
-        font-size: 88px        
-        //color: $primary_color       
+    align-items: center
+    padding-top: 38px
+    &-wrap
+        padding-left: 19px                      
+    &__logo           
+        margin: 0
+        height: 63px          
+        font-size: 88px
+        font-weight: 400              
+        color: $primary
         +logo
     &__menu
-        font-size: 18px
-        font-weight: 700                
-        //color: $second
+        font-size: 18px        
         +montreg
         &__link
             text-decoration: none
+            font-weight: 700
             text-transform: uppercase
             margin-right: 32px
+            color: $second
             &:last-child
                 margin-right: 0
-.hero
-    max-width: 500px    
-    &__title
-        display: block
-        font-size: 90px
-        margin-top: 92px        
-        text-transform: uppercase
+    &__active
+        padding: 10px 15px
+        color: $third
+        background-color: $primary
+        border-radius: 7px
+.hero        
+    &__title         
+        width: 493px
+        color: $primary
         +mont_bold
-    &__text               
+        font-size: 90px
+        font-weight: 200
+        line-height: 80px
+        text-transform: uppercase
+        letter-spacing: -1.8px
+        margin-top: 163px
+        margin-bottom: 47px
+    &__text
+        width: 466px               
         font-size: 20px
         font-weight: 400
-        //color: $second
+        color: $second
+    &__change-color
+        color: $second
+        letter-spacing: -1.8px
 .form-search
     position: absolute
     top: 253px
     right: 100px
-    width: 400px
-    height: 520px
+    max-width: 400px
+    max-height: 520px
     padding: 33px 24px 28px
     background-color: #d03958
     display: flex
     flex-direction: column
     border-radius: 5px
     &__title
+        margin-top: 0
+        margin-bottom: 37px
         font-size: 22px
-        //color: $third
-        text-align: center
-        margin-bottom: 40px
+        color: $third
+        text-align: center        
         +montreg
     &__button-form
         text-transform: uppercase
-        min-height: 57px
+        max-height: 57px
+        padding: 20px 158px 20px 134px
+        background-color: $second
+        color: $third
+        font-weight: 400
+        margin-top: 20px        
         +montreg
 .check-form
     display: flex
     align-items: center
-    margin-bottom: 20px
-    &___checked
-        width: 20px
-        height: 20px
-        border-radius: 3px
+    //justify-content: space-between
+    &__checked
+        opacity: 0
+    &__checked+&__text::after
+        content: none
+    &__checked:checked+&__text::after
+        content: ""
     &__text
+        position: relative
+        color: $third
         font-size: 20px
         font-weight: 400
+        line-height: 25px
         margin-left: 23px
-        color: #ffffff
-        +general
+        &::before
+            position: absolute
+            top: 3px
+            left: -35px
+            content: ""
+            display: inline-block
+            width: 20px
+            height: 20px
+            border: 1px solid $third
+            border-radius: 3px
+            background-color: #fff
+        &::after
+            position: absolute
+            top: 7px
+            left: -31px
+            content: ""
+            display: inline-block
+            height: 6px
+            width: 9px
+            border-left: 2px solid black
+            border-bottom: 2px solid black           
+            transform: rotate(-45deg)
+        
