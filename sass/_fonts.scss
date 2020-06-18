@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Quite Chocolatey";
+  src: url("../fonts/quite\ chocolatey.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Montserrat-Regular.woff") format("woff"),
+    url("Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/Montserrat-ExtraBold.eot");
+  src: url("../fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Montserrat-ExtraBold.woff") format("woff"),
+    url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Serif Regular";
+  src: url("../fonts/PTSerif-Regular.eot");
+  src: url("../fonts/PTSerif-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/PTSerif-Regular.woff") format("woff"),
+    url("PTSerif-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Couture Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/couture-bld.woff") format("woff");
+}
+
+@mixin general {
+  font-family: "PT Serif Regular", sans-serif;
+}
+
+@mixin logo {
+  font-family: "Quite Chocolatey", sans-serif;
+}
+
+@mixin montreg {
+  font-family: "Montserrat Regular", sans-serif;
+}
+
+@mixin mont_bold {
+  font-family: "Montserrat Bold", sans-serif;
+}
+
+@mixin couture {
+  font-family: "Couture Bold", sans-serif;
+}

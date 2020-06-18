@@ -1,0 +1,75 @@
+.header
+    background: url('../img/header/bg.png') no-repeat center       
+    position: relative
+    +general
+    //color: $third
+.navbar
+    display: block
+    &-wrap
+        padding-top: 38px
+        padding-bottom: 160px
+    display: flex
+    justify-content: space-between
+    align-items: center    
+    &__logo
+        font-size: 88px        
+        //color: $primary_color       
+        +logo
+    &__menu
+        font-size: 18px
+        font-weight: 700                
+        //color: $second
+        +montreg
+        &__link
+            text-decoration: none
+            text-transform: uppercase
+            margin-right: 32px
+            &:last-child
+                margin-right: 0
+.hero
+    max-width: 500px    
+    &__title
+        display: block
+        font-size: 90px
+        margin-top: 92px        
+        text-transform: uppercase
+        +mont_bold
+    &__text               
+        font-size: 20px
+        font-weight: 400
+        //color: $second
+.form-search
+    position: absolute
+    top: 253px
+    right: 100px
+    width: 400px
+    height: 520px
+    padding: 33px 24px 28px
+    background-color: #d03958
+    display: flex
+    flex-direction: column
+    border-radius: 5px
+    &__title
+        font-size: 22px
+        //color: $third
+        text-align: center
+        margin-bottom: 40px
+        +montreg
+    &__button-form
+        text-transform: uppercase
+        min-height: 57px
+        +montreg
+.check-form
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+    &___checked
+        width: 20px
+        height: 20px
+        border-radius: 3px
+    &__text
+        font-size: 20px
+        font-weight: 400
+        margin-left: 23px
+        color: #ffffff
+        +general
