@@ -1,12 +1,19 @@
+$primary: #d03958
+$second: #161616
+$third: #ffffff
+    
 .section-service
     background-color: #fff
-
 .service
-    padding-top: 40px
-    padding-bottom: 70px
+    padding-top: 45px
+    //padding-bottom: 70px
     &__title
-        display: block
+        margin-top: 0
+        margin-bottom: 0
+        color: $primary
         font-size: 50px
+        font-weight: 700
+        text-transform: uppercase
         +couture
     &-items
         display: flex
@@ -14,10 +21,10 @@
         align-items: center
         &__item
             text-align: center
-            align-self: flex-end
-            flex-grow: 2                      
+            align-self: flex-end                                 
     &-item
         margin-top: 100px
+        margin-bottom: 68px
         &__text
             width: 230px
             font-size: 20px
@@ -25,6 +32,8 @@
         margin-top: 45px
 
 
+.section-story    
+    background-color: $primary
 .story-section
     padding-top: 34px
     padding-bottom: 24px
@@ -32,11 +41,16 @@
     justify-content: space-between
     align-items: center
     &__text
+        margin: 0
+        padding-left: 19px
         font-size: 20px
-        flex: 2
-    &__button
-        flex: 1
-        text-transform: uppercase        
+        font-weight: 400
+        line-height: 28px        
+        max-width: 600px
+        color: $third
+    &__button        
+        text-transform: uppercase
+        margin-left: auto        
         width: 270px
         min-height: 64px
         background-color: #e3d5b8
