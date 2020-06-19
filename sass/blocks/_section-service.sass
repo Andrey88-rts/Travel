@@ -5,12 +5,11 @@ $third: #ffffff
 .section-service
     background-color: #fff
 .service
-    padding-top: 45px
-    //padding-bottom: 70px
+    padding-top: 45px    
     &__title
         margin-top: 0
         margin-bottom: 0
-        color: $primary
+        color: $second
         font-size: 50px
         font-weight: 700
         text-transform: uppercase
@@ -28,6 +27,9 @@ $third: #ffffff
         &__text
             width: 230px
             font-size: 20px
+            margin-top: 0
+            margin-bottom: 0
+            text-align: center
     &-text
         margin-top: 45px
 
@@ -55,3 +57,58 @@ $third: #ffffff
         min-height: 64px
         background-color: #e3d5b8
         +montreg
+
+
+.section-pricing
+    background-color: #e3d5b8
+    height: 540px
+.pricing
+    position: relative
+    &-title
+        text-align: center
+        padding-top: 64px
+        margin-bottom: 60px
+    &-group
+        display: flex
+        justify-content: space-between
+        align-items: flex-end                      
+        &__item
+            margin: 0
+            height: 360px
+            width: 320px
+            background-color: $third
+            padding: 35px 30px 0px
+            border-radius: 0
+            border-top-right-radius: 7px
+            border-top-left-radius: 7px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center                                  
+    &__title
+        color: $primary
+    &__button
+        width: 80%
+        text-transform: uppercase
+        +montreg
+        font-size: 22px
+        font-weight: 600
+        color: $second
+        background-color: #e3d5b8
+        padding: 17px 0        
+    &_change-color
+        color: $third
+        background-color: $primary
+    &__position
+        position: absolute
+        color: $second
+        background-color: #b4a993        
+        padding: 35px 0
+        transform: rotate(-45deg)
+        top: 165px
+        left: 260px
+        z-index: -1
+          
+
+
+

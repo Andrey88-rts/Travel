@@ -21,7 +21,7 @@
 .input {
   font-size: 20px;
   padding: 19px 19px;
-  padding-right: 0;
+  width: 352px;
   border-radius: 5px;
   color: #b5b5b5;
   margin-bottom: 17px;
@@ -34,6 +34,10 @@
   font-weight: 600;
   border: none;
   border-radius: 5px;
+}
+
+.pricing-item {
+  margin-right: 20px;
 }
 
 @font-face {
@@ -78,7 +82,6 @@
   background: url("../img/header/bg.png") no-repeat center;
   position: relative;
   font-family: "PT Serif Regular", sans-serif;
-  height: 693px;
 }
 
 .navbar {
@@ -133,26 +136,29 @@
 
 .hero__title {
   width: 493px;
-  color: #d03958;
+  color: #161616;
   font-family: "Montserrat Bold", sans-serif;
   font-size: 90px;
   font-weight: 200;
   line-height: 80px;
   text-transform: uppercase;
   letter-spacing: -1.8px;
-  margin-top: 163px;
+  margin-top: 150px;
   margin-bottom: 47px;
 }
 
 .hero__text {
+  margin-top: 0;
+  margin-bottom: 0;
   width: 466px;
   font-size: 20px;
   font-weight: 400;
   color: #161616;
+  padding-bottom: 150px;
 }
 
 .hero__change-color {
-  color: #161616;
+  color: #d03958;
   letter-spacing: -1.8px;
 }
 
@@ -232,15 +238,15 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 1px solid #ffffff;
+  border: 2px solid #777;
   border-radius: 3px;
   background-color: #fff;
 }
 
 .check-form__text::after {
   position: absolute;
-  top: 7px;
-  left: -31px;
+  top: 9px;
+  left: -29px;
   content: "";
   display: inline-block;
   height: 6px;
@@ -262,7 +268,7 @@
 .service__title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #d03958;
+  color: #161616;
   font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
@@ -295,6 +301,9 @@
 .service-item__text {
   width: 230px;
   font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .service-text {
@@ -336,5 +345,88 @@
   min-height: 64px;
   background-color: #e3d5b8;
   font-family: "Montserrat Regular", sans-serif;
+}
+
+.section-pricing {
+  background-color: #e3d5b8;
+  height: 540px;
+}
+
+.pricing {
+  position: relative;
+}
+
+.pricing-title {
+  text-align: center;
+  padding-top: 64px;
+  margin-bottom: 60px;
+}
+
+.pricing-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.pricing-group__item {
+  margin: 0;
+  height: 360px;
+  width: 320px;
+  background-color: #ffffff;
+  padding: 35px 30px 0px;
+  border-radius: 0;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing__title {
+  color: #d03958;
+}
+
+.pricing__button {
+  width: 80%;
+  text-transform: uppercase;
+  font-family: "Montserrat Regular", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #161616;
+  background-color: #e3d5b8;
+  padding: 17px 0;
+}
+
+.pricing_change-color {
+  color: #ffffff;
+  background-color: #d03958;
+}
+
+.pricing__position {
+  position: absolute;
+  color: #161616;
+  background-color: #b4a993;
+  padding: 35px 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 165px;
+  left: 260px;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
