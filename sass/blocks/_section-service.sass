@@ -32,8 +32,6 @@ $third: #ffffff
             text-align: center
     &-text
         margin-top: 45px
-
-
 .section-story    
     background-color: $primary
 .story-section
@@ -57,8 +55,6 @@ $third: #ffffff
         min-height: 64px
         background-color: #e3d5b8
         +montreg
-
-
 .section-pricing
     background-color: #e3d5b8
     height: 540px
@@ -108,7 +104,81 @@ $third: #ffffff
         top: 165px
         left: 260px
         z-index: -1
-          
+
+
+.blog    
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 155px
+    padding-bottom: 120px    
+    &-left
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        width: 490px
+        &__message
+            position: relative
+            margin-bottom: 70px
+            &:last-child
+                margin-bottom: 0
+        &__title
+            display: block
+            font-size: 50px
+            +mont_bold
+            margin: auto
+            color: $second
+            margin-bottom: 65px
+        &__text
+            font-size: 20px
+            margin: 0            
+        &_background
+            background-color: #e3d5b8
+            padding-left: 26px
+            padding-right: 79px
+            padding-top: 26px
+            height: 142px
+            border-radius: 5px
+        &__signature
+            color: $primary
+            font-size: 20px
+            +montreg
+    &__image
+        position: absolute
+        top: 0
+        right: -120px
+    &_position
+        right: -65px
+        top: 0
+    &-right
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        width: 490px           
+        &__title
+            display: block
+            font-size: 50px
+            +mont_bold
+            margin: auto
+            color: $primary
+            margin-bottom: 65px
+        &__link
+            color: $primary
+            font-size: 20px
+            margin: auto
+            margin-top: 47px
+        &__image            
+            text-align: right
+
+
+
+
+
+
+
+
 
 
 

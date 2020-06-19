@@ -429,4 +429,120 @@
   left: 260px;
   z-index: -1;
 }
+
+.blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 155px;
+  padding-bottom: 120px;
+}
+
+.blog-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 490px;
+}
+
+.blog-left__message {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.blog-left__message:last-child {
+  margin-bottom: 0;
+}
+
+.blog-left__title {
+  display: block;
+  font-size: 50px;
+  font-family: "Montserrat Bold", sans-serif;
+  margin: auto;
+  color: #161616;
+  margin-bottom: 65px;
+}
+
+.blog-left__text {
+  font-size: 20px;
+  margin: 0;
+}
+
+.blog-left_background {
+  background-color: #e3d5b8;
+  padding-left: 26px;
+  padding-right: 79px;
+  padding-top: 26px;
+  height: 142px;
+  border-radius: 5px;
+}
+
+.blog-left__signature {
+  color: #d03958;
+  font-size: 20px;
+  font-family: "Montserrat Regular", sans-serif;
+}
+
+.blog__image {
+  position: absolute;
+  top: 0;
+  right: -120px;
+}
+
+.blog_position {
+  right: -65px;
+  top: 0;
+}
+
+.blog-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 490px;
+}
+
+.blog-right__title {
+  font-size: 50px;
+  font-family: "Montserrat Bold", sans-serif;
+  margin: auto;
+  color: #d03958;
+  margin-bottom: 65px;
+}
+
+.blog-right__link {
+  color: #d03958;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 47px;
+}
+
+.blog-right__image {
+  text-align: right;
+}
 /*# sourceMappingURL=style.css.map */
