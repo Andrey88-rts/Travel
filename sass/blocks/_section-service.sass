@@ -1,11 +1,12 @@
 $primary: #d03958
 $second: #161616
 $third: #ffffff
-    
+
+//Стили секции услуг   
 .section-service
-    background-color: #fff
+    background-color: #fff    
 .service
-    padding-top: 45px    
+    padding-top: 45px        
     &__title
         margin-top: 0
         margin-bottom: 0
@@ -32,6 +33,8 @@ $third: #ffffff
             text-align: center
     &-text
         margin-top: 45px
+
+//Стили блока истории
 .section-story    
     background-color: $primary
 .story-section
@@ -55,11 +58,12 @@ $third: #ffffff
         min-height: 64px
         background-color: #e3d5b8
         +montreg
+
+// Стили секции с ценами
 .section-pricing
     background-color: #e3d5b8
     height: 540px
-.pricing
-    position: relative
+.pricing    
     &-title
         text-align: center
         padding-top: 64px
@@ -69,6 +73,7 @@ $third: #ffffff
         justify-content: space-between
         align-items: flex-end                      
         &__item
+            position: relative
             margin: 0
             height: 360px
             width: 320px
@@ -80,7 +85,8 @@ $third: #ffffff
             display: flex
             flex-direction: column
             justify-content: space-between
-            align-items: center                                  
+            align-items: center
+            overflow: hidden                                 
     &__title
         color: $primary
     &__button
@@ -99,13 +105,13 @@ $third: #ffffff
         position: absolute
         color: $second
         background-color: #b4a993        
-        padding: 35px 0
+        padding: 35px 0 15px
         transform: rotate(-45deg)
-        top: 165px
-        left: 260px
-        z-index: -1
+        top: -12px
+        left: -84px
+        
 
-
+//Секция блога и фотогалерея
 .blog    
     display: flex
     justify-content: space-between
@@ -146,8 +152,8 @@ $third: #ffffff
             +montreg
     &__image
         position: absolute
-        top: 0
-        right: -120px
+        top: -10px
+        right: -160px
     &_position
         right: -65px
         top: 0
