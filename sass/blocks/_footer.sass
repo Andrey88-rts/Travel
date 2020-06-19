@@ -1,0 +1,30 @@
+.section-footer
+    background-color: $second    
+.footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 183px
+    &-reserved        
+        color: $third
+        font-size: 20px
+        &__right
+            &::after
+                content: "|"
+                color: $third
+                width: 2px
+                margin-left: 6px
+        &__year
+            &::after
+                content: "|"
+                color: $third
+                width: 2px
+                margin-left: 10px
+                margin-right: 10px
+        &__logo
+            color: $primary
+            font-size: 65px
+            +logo
+        &__design
+            &_color
+                color: $primary

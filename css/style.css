@@ -352,10 +352,6 @@
   height: 540px;
 }
 
-.pricing {
-  position: relative;
-}
-
 .pricing-title {
   text-align: center;
   padding-top: 64px;
@@ -375,6 +371,7 @@
 }
 
 .pricing-group__item {
+  position: relative;
   margin: 0;
   height: 360px;
   width: 320px;
@@ -422,12 +419,12 @@
   position: absolute;
   color: #161616;
   background-color: #b4a993;
-  padding: 35px 0;
+  padding: 35px 0 15px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  top: 165px;
-  left: 260px;
-  z-index: -1;
+  top: -12px;
+  left: -84px;
+  opacity: 0.5;
 }
 
 .blog {
@@ -501,8 +498,8 @@
 
 .blog__image {
   position: absolute;
-  top: 0;
-  right: -120px;
+  top: -10px;
+  right: -160px;
 }
 
 .blog_position {
@@ -528,6 +525,7 @@
 }
 
 .blog-right__title {
+  display: block;
   font-size: 50px;
   font-family: "Montserrat Bold", sans-serif;
   margin: auto;
@@ -544,5 +542,52 @@
 
 .blog-right__image {
   text-align: right;
+}
+
+.section-footer {
+  background-color: #161616;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 183px;
+}
+
+.footer-reserved {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.footer-reserved__right::after {
+  content: "|";
+  color: #ffffff;
+  width: 2px;
+  margin-left: 6px;
+}
+
+.footer-reserved__year::after {
+  content: "|";
+  color: #ffffff;
+  width: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer-reserved__logo {
+  color: #d03958;
+  font-size: 65px;
+  font-family: "Quite Chocolatey", sans-serif;
+}
+
+.footer-reserved__design_color {
+  color: #d03958;
 }
 /*# sourceMappingURL=style.css.map */
